@@ -12,6 +12,7 @@ def inicializar_db():
     try:
         with current_app.app_context():
             db.create_all()
+            db.session.commit()
             return "La base de datos se ha creado correctamente.", 200
     except Exception as e: 
         return f"Ha ocurrido un error: {e}", 500
