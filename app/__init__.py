@@ -14,9 +14,6 @@ def create_app(config_class=Config):
     # instanciamos la base de datos
     db.init_app(app)
 
-    # creamos las tablas 
-    db.create_all()
-
     app.register_blueprint(mapa.mapa_bp)
 
     return app
