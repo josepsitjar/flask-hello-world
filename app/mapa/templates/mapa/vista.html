@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Estaciones meteorológicas{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/">Estaciones</a>
+          </div>
+          <div class="navbar-collapse collapse navbar-right">
+              <ul class="nav navbar-nav">
+                  <li><a href="/">Login</a></li>
+                  <li><a href="/">Signup</a></li>
+              </ul>
+          </div>
+      </div>
+</div>
+{% endblock %}
+
+{% block content %}
+ <div class="container-fluid">
+     <div class="row" id="map"></div>
+ </div>
+{% endblock %}
