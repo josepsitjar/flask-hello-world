@@ -9,7 +9,7 @@ bootstrap = Bootstrap()
 def create_app(config_class=Config):
     """Función que devuelve la instancia de la aplicación flask"""
 
-    app = Flask(__name__, static_folder=None)
+    app = Flask(__name__)
 
     # añadir bootstrap a la aplicación
     bootstrap.init_app(app)

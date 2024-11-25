@@ -6,7 +6,8 @@ mapa_bp = Blueprint("mapa",
                     __name__, 
                     template_folder='templates',
                     static_folder='static',
-                    url_prefix='/mapa'
+                    url_prefix='/mapa',
+                    static_url_path='/mapa/static'
                     )
 
 @mapa_bp.route("/")
