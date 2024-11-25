@@ -2,6 +2,14 @@
 
 {% block title %}Estaciones meteorológicas{% endblock %}
 
+{% block head %}
+{{ super() }}
+<!--hoja de estilo de openlayers-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('mapa.static', filename='dist/index.css') }}">
+<!--hoja de estilo propia-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('mapa.static', filename='style.css') }}">
+{% endblock %}
+
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
       <div class="container">
@@ -22,4 +30,9 @@
  <div class="container-fluid">
      <div class="row" id="map"></div>
  </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type="text/javascript" src="{{ url_for('mapa.static', filename='dist/index.js') }}"></script>
 {% endblock %}

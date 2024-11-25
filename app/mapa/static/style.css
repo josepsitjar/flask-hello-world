@@ -1,0 +1,13 @@
+#map {
+    width: 100vw;
+    height: 95vh;
+}
+
+.navbar{
+    height: 5vh !important;
+    margin-bottom: 0px !important;
+}
+
+.container-fluid {
+    margin-top: -15px !important;
+}
