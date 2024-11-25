@@ -4,3 +4,4 @@ psycopg2-binary
 Flask-SQLAlchemy
 GeoAlchemy2
 Flask-Bootstrap
+shapely-geojson
